@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报告</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(250, 220, 250);
+            transition: 1s;
+        }
+
+        .shell {
+            width: 80%;
+            height: 80%;
+            background-color: #fff;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .shell-top {
+            width: 100%;
+            height: 90%;
+            border-bottom: 1px solid rgba(223, 223, 223);
+            overflow-x: hidden;
+        }
+
+        .shell-top ul {
+            width: 300%;
+            height: 100%;
+            display: flex;
+            position: relative;
+            transition: .3s;
+            left: 0;
+        }
+
+        .shell-top ul li {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .shell-bottom {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 58px;
+            cursor: pointer;
+        }
+
+        .shell-bottom li {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: grayscale(0.5)
+        }
+
+        .shell-bottom li img {
+            width: 40px;
+        }
+
+        p {
+            padding: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button1 {
+            padding: 12.5px 30px;
+            border: 0;
+            border-radius: 100px;
+            background-color: #2ba8fb;
+            color: #ffffff;
+            font-weight: Bold;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            position: fixed;
+            left: 12px;
+            top: 12px;
+        }
+
+        button1:hover {
+            background-color: #6fc5ff;
+            box-shadow: 0 0 20px #6fc5ff50;
+            cursor: pointer;
+        }
+
+        button1:active {
+            background-color: #3d94cf;
+            transition: all 0.25s;
+            -webkit-transition: all 0.25s;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="shell-top">
+            <ul class="main">
+                <li>
+                    <p>组长：李治 0223242&nbsp&nbsp软工11班
+                        名称：小小疫站<br></br>
+                        主题：疫情<br></br>
+                        动机：2022疫情全面放开，纪念过去防疫工作。<br></br>
+                        模块：完成首页、疫情历程、账号登陆、搜索框、临床症状、报告等页面的制作，并辅助组员制作页面。<br></br>
+                        内容技术要求如二级导航栏、侧边导航栏、表格图片等都已完成。<br></br>
+                        主要技术：利用js实现动态效果，使用flex，grid布局完成页面结构设计，利用css层叠样式布局、完成动画，实现搜索功能等。<br></br>
+                        具体效果图请点击这里<a href="bg2.html">click me</a><br></br>
+                        自我评价：通过这次大作业发现自己基础并不牢靠，还是应该多夯实基础，一步一个脚印慢慢学，对于网页设计来说自己也缺乏美感。<br></br>
+                        难点：对于响应式布局和利用媒体查询适应移动端掌握的不好，同时思考网站的布局也是难点（要保持子网页排版不同）。<br></br>
+                        js的运用也非常困难，只能通过靠css的转换来复杂实现。使用flex，grid布局时也经常出现元素排列混乱，只能慢慢调试。<br></br>
+                        在做网页的过程中想达到更好的效果会主动上网查询资料，也收获了很多前端设计开发的资源，算是小进步吧。<br></br>
+                        总结：这次大作业给我了很多机会去发现自己的不足之处，而且也能和不同学生一起对web开发进行交流，使我学到很多新知识。<br></br>
+                        展望：希望能学习更多前端知识，充实提高自己。<br></br></p>
+                </li>
+                <li>
+                    <p>
+                        组员：谭丽婷 0223455&nbsp&nbsp软工11班<br></br>
+                        名称：小小疫站<br></br>
+                        主题：疫情<br></br>
+                        动机：当下疫情严峻<br></br>
+                        模块：联系我们、照片墙和诗歌部分<br></br>
+                        自我评价：认识到自己仍有很多不足，能力有待提高。<br></br>
+                        总结：小组成员互帮互助，教会了我很多有用东西<br></br>
+                        展望：希望能学的更好。<br></br></p>
+                </li>
+                <li>
+                    <p>组员：艾鑫 0223459&nbsp&nbsp软工11班<br></br>
+                        名称：小小疫站<br></br>
+                        主题：疫情<br></br>
+                        动机：当下疫情严峻<br></br>
+                        模块：病毒的危害、传播途径和预防措施<br></br>
+                        自我评价：小组作业我做得不够好，能力有待提高<br></br>
+                        总结：小组成员都很和睦，大作业不仅促进了我们之间的关系，还教会了我很多有用的东西
+                        非常的不错。<br></br>
+                        展望：希望有更多能和同学交流的机会。<br></br></p>
+
+                </li>
+            </ul>
+
+        </div>
+        <ul class="shell-bottom">
+            <li class="list"><img src="img/hsz.jpg"></li>
+            <li class="list"><img src="img/jj.jpg"></li>
+            <li class="list"><img src="img/hsz.jpg"></li>
+        </ul>
+    </div>
+    <button1>
+        <a href="主页.html">Back</a>
+    </button1>
+    <script>
+        let list = document.querySelectorAll(".list")
+        let main = document.querySelector(".main")
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener("click", () => {
+                main.style.left = (i * -100) + "%"
+                if (i) {
+                    i == 1 ? document.body.style.backgroundColor = "rgb(240, 175, 195)" : document.body.style.backgroundColor = "rgb(180, 200, 150)"
+                } else {
+                    document.body.style.backgroundColor = "rgb(250, 220, 250)"
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

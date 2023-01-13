@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>疫情历程</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            overflow-x: hidden;
+            background-color: cadetblue;
+            flex-wrap: wrap;
+        }
+
+        .wrap {
+            width: 1000px;
+            position: absolute;
+            top: 1500px;
+        }
+
+        .wrap::after {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            width: 5px;
+            z-index: -999;
+            height: 1000px;
+            background-color: rgba(255, 255, 255, .5);
+        }
+
+        .box {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left,
+        .right {
+            position: relative;
+            width: 40%;
+            height: 120px;
+            border-radius: 15px;
+            text-align: center;
+            color: rgb(90, 90, 90);
+
+        }
+
+        .box:nth-child(even) .left {
+            background-color: rgba(255, 255, 255, .4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        .box:nth-child(odd) .right {
+            background-color: rgba(255, 255, 255, .4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        .center {
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .center>span {
+            width: 120px;
+            border-radius: 10px;
+            text-align: center;
+            font: 900 24px '';
+            line-height: 50px;
+            background-color: #fff;
+        }
+
+        .background::before {
+            content: '';
+            background-size: cover;
+            background-image: inherit;
+            background-position: 50% 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -99;
+        }
+
+        .background {
+            background-image: url("img/mountain range.jpg");
+            background-size: cover;
+            background-position: 50% 50%;
+            height: 200vh;
+            font: 900 39rem '';
+            line-height: 130vh;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            background-clip: text;
+            width: 100%;
+        }
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            letter-spacing: 10px;
+            color: #fff;
+        }
+
+        h2 {
+            position: absolute;
+            letter-spacing: 2px;
+            top: 120vh;
+            width: 60%;
+            color: #fff;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 30px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        button {
+            padding: 12.5px 30px;
+            border: 0;
+            border-radius: 100px;
+            background-color: #2ba8fb;
+            color: #ffffff;
+            font-weight: Bold;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            position: fixed;
+            left: 12px;
+            top: 12px;
+        }
+
+        button:hover {
+            background-color: #6fc5ff;
+            box-shadow: 0 0 20px #6fc5ff50;
+        }
+
+        button:active {
+            background-color: #3d94cf;
+            transition: all 0.25s;
+            -webkit-transition: all 0.25s;
+            box-shadow: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!---->
+    <h1>2019-2023<br />疫情历程</h1>
+    <div class="background"><span>疫情</span></div>
+    <h2>
+        2023年1月8日起，我国对新型冠状病毒感染从“乙类甲管”调整为“乙类乙管”。这意味着，当前我国疫情防控进入新阶段。三年来，从“防感染”到“保健康防重症＂，难忘的日日夜夜，难闯的重大关头……此时此刻，历历在目！
+    </h2>
+    <div class="wrap">
+        <div class="box">
+            <div class="left"></div>
+            <div class="center"><span>
+                    2019
+                </span></div>
+            <div class="right"><br></br>2019年底，疫情暴发。一个月后，世卫组织将这种疾病命名为新型冠状病毒肺炎。
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <br></br>
+                2020年12月31日，中国首个新冠病毒疫苗附条件上市。
+                截至2022年12月，疫苗全程接种率超过90%。
+            </div>
+            <div class="center"><span>
+                    2020
+                </span></div>
+            <div class="right"></div>
+        </div>
+
+        <div class="box">
+            <div class="left"></div>
+            <div class="center"><span>
+                    2021
+                </span></div>
+            <div class="right"><br></br>截至2021年12月，全国现有确诊病例2886例（其中重症病例15例），累计治愈出院病例94792例。
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="left"><br></br>国家疫情防控中心通知得知2022年12月7日国家卫健委提出疫情放开。
+            </div>
+            <div class="center"><span>
+                    2022
+                </span></div>
+            <div class="right"></div>
+        </div>
+
+        <div class="box">
+            <div class="left"></div>
+            <div class="center"><span>
+                    2023
+                </span></div>
+            <div class="right"><br></br>2023年疫情任未结束，随着政策放开，更多病毒正在进入公众视野。</div>
+        </div>
+    </div>
+    <button>
+        <a href="主页.html">Back</a>
+    </button>
+    </div>
+    </div>
+    <script>
+        const background = document.querySelector(".background")
+
+        document.addEventListener('scroll', () => {
+            const scrollY = window.scrollY
+
+            if (scrollY !== 0) {
+                background.style.backgroundPosition = `calc(50% + ${scrollY}px) calc(50% + ${scrollY}px)`
+            } else {
+                background.style.backgroundPosition = ''
+            }
+        })
+    </script>
+</body>
+
+</html>

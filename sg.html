@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>赞医护人员</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .shell {
+        height: 100vh;
+        overflow-x: hidden;
+        perspective: 3px;
+    }
+
+    .shell div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: 30px;
+        letter-spacing: 2px;
+    }
+
+    .image {
+        transform: translateZ(-1px) scale(1.6);
+        background-size: cover;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    .text {
+        height: 50vh;
+        background-color: #fff;
+    }
+
+    .text h1 {
+        color: #000;
+    }
+
+    .heading {
+        z-index: -1;
+        transform: translateY(-30vh) translateZ(1px);
+        color: #fff;
+        font-size: 30px;
+    }
+
+    button1 {
+        padding: 12.5px 30px;
+        border: 0;
+        border-radius: 100px;
+        background-color: #2ba8fb;
+        color: #ffffff;
+        font-weight: Bold;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        position: fixed;
+        left: 12px;
+        top: 12px;
+    }
+
+    button1:hover {
+        background-color: #6fc5ff;
+        box-shadow: 0 0 20px #6fc5ff50;
+        cursor: pointer;
+    }
+
+    button1:active {
+        background-color: #3d94cf;
+        transition: all 0.25s;
+        -webkit-transition: all 0.25s;
+        box-shadow: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="shell">
+        <div class="image" style="background-image: url('img/s1.jpg');"></div>
+        <div class="heading">
+            <h1>千 家 万 户 闭 门 羹</h1>
+        </div>
+        <div class="text">
+            <h1>众 志 成 城 战 疫 情</h1>
+        </div>
+
+        <div class="image" style="background-image: url('img/s2.jpg');"></div>
+        <div class="heading">
+            <h1>白 衣 天 使 功 劳 大</h1>
+        </div>
+        <div class="text">
+            <h1>不 惧 生 死 往 前 冲</h1>
+        </div>
+
+        <div class="image" style="background-image: url('img/s3.jpg');"></div>
+        <div class="heading">
+            <h1>忘 我 抢 救 病 患 者</h1>
+        </div>
+        <div class="text">
+            <h1>危 难 面 前 真 英 雄</h1>
+        </div>
+
+        <div class="image" style="background-image: url('img/s4.jpeg');"></div>
+        <div class="heading">
+            <h1>以此致敬所有为疫情奔波的人们</h1>
+        </div>
+    </div>
+    <button1>
+        <a href="主页.html">Back</a>
+    </button1>
+</body>
+
+</html>
