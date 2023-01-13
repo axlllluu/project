@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			list-style: none;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.one {
+			width: 1519px;
+			height: 837px;
+			background-image: url(../img/banner-bg.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.logo {
+			position: relative;
+			text-align: center;
+			top: 30px;
+		}
+
+		.active {
+			position: relative;
+			list-style: none;
+			width: 652px;
+			display: flex;
+			top: 65px;
+			left: 480px;
+			background-color: rgba(255, 255, 255, .85);
+			border-radius: 5px;
+		}
+
+
+		.active li {
+			flex-grow: 1;
+			width: 91px;
+			height: 100%;
+			text-align: center;
+			border-radius: 10px;
+			line-height: 45px;
+			display: flex;
+			justify-content: center;
+			transition: all 0.3s;
+		}
+
+		.active li a {
+			text-align: center;
+			width: 102px;
+			height: 52px;
+			transition: all 0.3s;
+			color: #333;
+			text-decoration: none;
+			display: block;
+			height: 100%;
+			border-radius: 4px;
+			line-height: 52px;
+			transition: .2s;
+		}
+
+		.active li:hover,
+		.active a:hover {
+			background-color: #2b2278;
+			color: #fff;
+		}
+
+		.active li:hover a {
+			color: #fff;
+		}
+
+		li a,
+		.dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: #2b2278;
+		}
+
+		li.dropdown {
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #333333;
+			min-width: 120px;
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #f1f1f1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.top {
+			position: relative;
+			top: 80px;
+			width: 1519.2px;
+			height: 778px;
+			background-color: #fff;
+
+		}
+
+		.tititlte {
+			font-size: 25px;
+			position: relative;
+			top: 100px;
+			width: 1519.2px;
+			height: 300px;
+			text-align: center;
+		}
+
+		.inputtt {
+			width: 1519.2px;
+			position: relative;
+			bottom: 50px;
+			text-align: center;
+		}
+
+		.email-bt {
+			width: 771px;
+			font-size: 18px;
+			color: #393838;
+			margin-bottom: 20px;
+			padding: 10px 15px;
+		}
+
+		.massage-bt {
+			width: 771px;
+			height: 200px;
+			font-size: 18px;
+			color: #393838;
+			margin-bottom: 20px;
+			padding: 10px 15px;
+			border: 1px solid #2b2278;
+		}
+
+		.btnb {
+			position: relative;
+			bottom: 40px;
+			left: 655px;
+			width: 170px;
+			height: 36px;
+			text-align: center;
+			font-size: 20px;
+			color: #ffffff;
+			border-radius: 30px;
+			background-color: #000d10;
+			padding: 7px;
+		}
+
+		.btnb a {
+			color: white;
+			line-height: 37px;
+		}
+
+		.seven {
+			width: 1519.2px;
+			height: 690.53px;
+			text-align: center;
+			background-image: url(../img/footer-bg.png);
+			background-size: cover;
+		}
+
+		.inputa {
+			float: left;
+			position: relative;
+			top: 100px;
+			left: 500px;
+		}
+
+		.mailtext {
+			width: 380px;
+			float: left;
+			font-size: 20px;
+			color: #2b2c2c;
+			background-color: #ffffff;
+			height: auto;
+			padding: 20px 20px;
+			border-radius: 20px 0 0 20px;
+			border: 0px;
+			outline: none;
+		}
+
+		.btnv {
+			height: auto;
+			float: left;
+			color: #2b2c2c;
+			background-color: #ffffff;
+			padding: 20px 20px 23px 20px;
+			border-radius: 0 20px 20px 0;
+			font-weight: bold;
+		}
+
+		.btnv a {
+			color: #000000
+		}
+
+		.main {
+			text-align: center;
+		}
+
+		.aa,
+		.cc {
+			position: relative;
+			width: 300px;
+			height: 100px;
+			margin: 0 auto;
+		}
+
+		.aa a,
+		.cc a {
+			color: white;
+			transition: all 0.3s;
+		}
+
+		.aa a:hover,
+		.cc a:hover {
+			color: #fd7e14;
+		}
+
+		.totala {
+			position: relative;
+			top: 200px;
+		}
+
+		.totala ul {
+			display: flex;
+		}
+
+		.totala li {
+			padding: 30px 5px;
+			position: relative;
+			left: 690px;
+			bottom: 5px;
+		}
+
+		.last {
+			width: 1519.2px;
+			height: white;
+			color: white;
+			background-color: #122C2D;
+			text-align: center;
+		}
+
+		.txb {
+			font-size: 16px;
+			padding: 20px 20px;
+		}
+
+		.txb a {
+			color: white;
+			transition: all 0.3s;
+		}
+
+		.txb a:hover {
+			color: #e27141;
+		}
+
+		.ooooo {
+			position: relative;
+			top: 150px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="one">
+		<div class="menu">
+			<div class="logo">
+				<img src="img/logo.png" />
+			</div>
+			<ul class="active">
+				<li>
+					<a href="主页.html">首页</a>
+				</li>
+				<li>
+					<a href="疫情历程.html">疫情历程</a>
+				</li>
+				<li>
+					<a href="传播途径.html">传播途径</a>
+				</li>
+				<li>
+					<a href="病毒症状.html">病毒症状</a>
+				</li>
+				<li class="dropdown">
+					<a class="dropbtn">联系我们</a>
+					<div class="dropdown-content">
+						<a href="contact.html">联系</a>
+						<a href="zh.html">注册登录</a>
+				</li>
+			</ul>
+			<div class="top">
+				<div class="tititlte">
+					<h1>Request A Call Back</h1>
+				</div>
+				<div class="inputtt">
+					<input type="text" class="email-bt" placeholder="Name" name="Email">
+					<input type="text" class="email-bt" placeholder="Phone Numbar" name="Email">
+					<input type="text" class="email-bt" placeholder="Email" name="Email">
+					<textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+				</div>
+				<div class="btnb">
+					<a href="#">SEND</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="ooooo">
+		<div class="seven">
+			<div class="inputa">
+				<input type="text" class="mailtext" placeholder="Enter your email" name="Enter your email" />
+				<div class="btnv">
+					<a href="#">SUBSCRIBE</a>
+				</div>
+			</div>
+
+			<div class="totala">
+				<div class="main">
+					<div class="aa">
+						<img src="img/call-icon.png" />
+						<br />
+						<a href="#">Call +01 1234567890</a>
+					</div>
+					<div class="cc"><img src="img/mail-icon.png" />
+						<br />
+						<a href="#">demo@gmail.com</a>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+</body>
+</div>
+
+</html>
